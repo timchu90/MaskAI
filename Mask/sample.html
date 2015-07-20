@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+var s = 
+'{"ptype":"snippet",' +
+'"text":"I trusted her", '   +
+'"type":"statement",' +
+'"time":1200,' +
+'"emotions":{"anger":0.5 , "disgust":0.6, "happy":0.0, "sad":0.3, "scared":0.0}}';
+
+obj = JSON.parse(s);
+
+document.getElementById("demo").innerHTML = 
+"Ptype      : " + obj.ptype + "<br>" + 
+"Text       : " + obj.text + "<br>" +
+"Type       : " + obj.type + "<br>" +
+"Time       : " + obj.time + "<br><br>" +
+"Anger      : " + obj.emotions.anger + "<br>" +
+"Disg       : " + obj.emotions.happy + "<br>" +
+"Happy      : " + obj.emotions.anger + "<br>" +
+"Sad        : " + obj.emotions.sad + "<br>" +
+"Scared     : " + obj.emotions.scared + "<br>";
+</script>
+
+</body>
+</html>

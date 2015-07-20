@@ -1,0 +1,78 @@
+{
+  "type": "object",
+  "properties": {
+    "ptype": {
+      "id": "ptype",
+      "type": "string",
+      "enum": [
+        "snippet",
+        "pause"
+      ]
+    },
+    "text": {
+      "id": "text",
+      "type": "string"
+    },
+    "type": {
+      "id": "type",
+      "type": "string",
+      "enum": [
+        "statement",
+        "question",
+        "exclamation"
+      ]
+    },
+    "time": {
+      "id": "time",
+      "type": "integer"
+    },
+    "emotions": {
+      "id": "emotions",
+      "type": "object",
+      "properties": {
+        "anger": {
+          "id": "anger",
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "disgust": {
+          "id": "disgust",
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "happy": {
+          "id": "happy",
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sad": {
+          "id": "sad",
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "scared": {
+          "id": "scared",
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  },
+  "required": [
+    "ptype",
+    "text",
+    "type",
+    "time",
+    "emotions"
+  ]
+}
