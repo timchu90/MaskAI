@@ -1,0 +1,116 @@
+Happy
+R_Top_Eyelid = 0
+L_Top_Eyelid = 0
+R_R_Eyebrow = 0
+R_L_Eyebrow = 50
+L_R_Eyebrow = 50
+L_L_Eyebrow = 0
+Furrow = 0
+R_Bot_Eyelid = 100
+L_Bot_Eyelid = 100
+R_Cheek = 80
+L_Cheek = 80
+R_Nostril = 80 
+L_Nostril = 80
+Top_Lip = 50
+Bot_Lip = 50
+R_Mouth_Up = 99
+L_Mouth_Up = 100
+Jaw = 30
+R_Mouth_Down = 0
+L_Mouth_Down = 0
+
+Sad
+R_Top_Eyelid = 0
+L_Top_Eyelid = 0
+R_R_Eyebrow = 0
+R_L_Eyebrow = 100
+L_R_Eyebrow = 100
+L_L_Eyebrow = 0
+Furrow = 50
+R_Bot_Eyelid = 0
+L_Bot_Eyelid = 0
+R_Cheek = 50
+L_Cheek = 50
+R_Nostril = 30
+L_Nostril = 30
+Top_Lip = 0
+Bot_Lip = 0
+R_Mouth_Up = 0
+L_Mouth_Up = 0
+Jaw = 30
+R_Mouth_Down = 100
+L_Mouth_Down = 100
+
+Angry
+R_Top_Eyelid = 17
+L_Top_Eyelid = 10
+R_R_Eyebrow = 60
+R_L_Eyebrow = 0
+L_R_Eyebrow = 0
+L_L_Eyebrow = 60
+Furrow = 100
+R_Bot_Eyelid = 0
+L_Bot_Eyelid = 0
+R_Cheek = 0
+L_Cheek = 0
+R_Nostril = 50
+L_Nostril = 50
+Top_Lip = 40
+Bot_Lip = 0
+R_Mouth_Up = 0
+L_Mouth_Up = 0
+Jaw = 0
+R_Mouth_Down = 100
+L_Mouth_Down = 100
+
+Scared
+R_Top_Eyelid = 0
+L_Top_Eyelid = 0
+R_R_Eyebrow = 0
+R_L_Eyebrow = 100
+L_R_Eyebrow = 100
+L_L_Eyebrow = 0
+Furrow = 0
+R_Bot_Eyelid = 0
+L_Bot_Eyelid = 0
+R_Cheek = 100
+L_Cheek = 100
+R_Nostril = 100
+L_Nostril = 100
+Top_Lip = 100
+Bot_Lip = 50
+R_Mouth_Up = 0
+L_Mouth_Up = 0
+Jaw = 0
+R_Mouth_Down = 100
+L_Mouth_Down = 100
+
+Disgust
+R_Top_Eyelid = 20
+L_Top_Eyelid = 15
+R_R_Eyebrow = 50
+R_L_Eyebrow = 40
+L_R_Eyebrow = 0
+L_L_Eyebrow = 0
+Furrow = 100
+R_Bot_Eyelid = 0
+L_Bot_Eyelid = 0
+R_Cheek = 50
+L_Cheek = 0
+R_Nostril = 50
+L_Nostril = 0
+Top_Lip = 50
+Bot_Lip = 40
+R_Mouth_Up = 0
+L_Mouth_Up = 0
+Jaw = 50
+R_Mouth_Down = 80
+L_Mouth_Down = 100
+
+
+
+
+
+
+
