@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MaskScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\jsonParse.cs">
     <Files>
-      <File FileName="Assets\MaskScript.cs" Line="15" Column="3" />
+      <File FileName="Assets\Audio.cs" Line="84" Column="1" />
+      <File FileName="Assets\MaskScript.cs" Line="2" Column="13" />
+      <File FileName="Assets\jsonParse.cs" Line="7" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

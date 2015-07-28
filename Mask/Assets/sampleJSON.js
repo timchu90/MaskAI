@@ -21,7 +21,7 @@ var happy = packet["emotions"]["happy"].AsFloat;
 var sad = packet["emotions"]["sad"].AsFloat;
 var scared = packet["emotions"]["scared"].AsFloat;
 
-print ("text:" + text + "\n" + 
+Debug.Log ("text:" + text + "\n" + 
 "time:" + time + "\n" + 
 "anger:" + anger + "\n" +
 "disgust:" + disgust + "\n" +
