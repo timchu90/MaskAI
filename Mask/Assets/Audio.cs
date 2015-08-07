@@ -17,17 +17,7 @@ public class Audio : MonoBehaviour {
 	public bool word2_bold = false;
 	//tl = lang , q = word
 	// Use this for initialization
-	void Start () {
-//		Debug.Log("I am alive!");
-/*
-		yield return StartCoroutine(Play (word , word_bold));
-		word = word1;
 
-		yield return StartCoroutine(Play (word , word1_bold));
-		word = word2;
-		yield return StartCoroutine(Play (word , word2_bold));
-*/
-	}
 
 
 
@@ -35,13 +25,14 @@ public class Audio : MonoBehaviour {
 		final_word = word;
 		Debug.Log ("I am here 2!"); 
 		// Remove the "spaces" in excess
+
 		Regex rgx = new Regex ("\\s+");
 		// Replace the "spaces" with "% 20" for the link Can be interpreted
 		string result = rgx.Replace (word, "%20");
 //		Debug.Log (word + result); 
-		string url = "http://translate.google.com/translate_tts?tl=" + lang + "&q=" + result;
-
-//		Debug.Log (url);
+//		string url = "http://translate.google.com/translate_tts?tl=" + lang + "&q=" + result;
+		string url = "http://tts-api.com/tts.mp3?q=" + result;
+		Debug.Log (url);
 		WWW www = new WWW (url);
 		while (!www.isDone) {
 //			Debug.Log ("DONE?");
@@ -49,16 +40,17 @@ public class Audio : MonoBehaviour {
 		}
 
 
-		
+
 		//AudioClip webclip = www.audioClip;
 		AudioClip webclip = www.GetAudioClip (false, true, AudioType.MPEG);
-		
-		source.clip = webclip;
-
-		while (!source.clip.isReadyToPlay) {
-			Debug.Log ("audio stream not ready yet");
+		while (!webclip.isReadyToPlay)
+		{
+			Debug.Log( "Not Ready !");
 			yield return null;
 		}
+
+		source.clip = webclip;
+
 
 		source.volume = vol;
 		
@@ -69,8 +61,8 @@ public class Audio : MonoBehaviour {
 			source.pitch = 1f;
 			source.volume = vol;
 		}
+		//source.PlayDelayed (10); 
 		source.Play (); 
-
 		while (source.isPlaying) {
 			// do nothing and keep returning while audio is still playing
 			yield return null;

@@ -7,18 +7,19 @@ public class jsonParse : MonoBehaviour {
 		"{\"ptype\":\"snippet\"," +
 			"\"text\":\"I trusted her\", "   +
 			"\"type\":\"statement\"," +
-			"\"time\":1200," +
+			"\"time\":0," +
 			"\"emotions\":{\"anger\":0.5 , \"disgust\":0.6, \"happy\":0.0, \"sad\":0.3, \"scared\":0.0}}";
 	string s1 = 
 		"{\"ptype\":\"snippet\"," +
 			"\"text\":\"I reeeally reeeally trusted her\", "   +
 			"\"type\":\"statement\"," +
-			"\"time\":1200," +
+			"\"time\":0," +
 			"\"emotions\":{\"anger\":0.5 , \"disgust\":0.6, \"happy\":0.0, \"sad\":0.3, \"scared\":0.0}}";
 
 	// Use this for initialization
 	IEnumerator Start () {
 		yield return StartCoroutine (handler (s));
+		yield return new WaitForSeconds(5);
 		yield return StartCoroutine (handler (s1));
 	}
 
@@ -44,6 +45,7 @@ public class jsonParse : MonoBehaviour {
 		Audio audio = new Audio ();
 		AudioSource source = gameObject.GetComponent<AudioSource> ();
 		yield return StartCoroutine(audio.Play( text, false , source));
+//		yield return StartCoroutine(audio.Play( text, false));
 	}
 
 	GUIStyle text_style = new GUIStyle ();
