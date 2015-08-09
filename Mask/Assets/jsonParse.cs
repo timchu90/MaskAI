@@ -5,9 +5,13 @@ using System.Text;
 using System.IO;
 
 public class jsonParse : MonoBehaviour {
-	int x;
+	int snippetCount = 0;
+	string[] snippetArray = new string[5];
+	string metadata;
 	SkinnedMeshRenderer skinnedMeshRenderer;
 	string text = "";
+	float timer;
+	float time;
 	float[] blendshapes = new float[20]; //array holds goal values for all 
 	private string Load(string fileName)
 	{
@@ -46,10 +50,15 @@ public class jsonParse : MonoBehaviour {
 
 	// Use this for initialization
 	IEnumerator Start () {
-		x = 0;
 		skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
-		string metadata = Load ("Assets/SampleMetadata.JSON");
-		string s = Load ("Assets/SamplePayload.JSON");
+		metadata = Load ("Assets/SampleMetadata.JSON");
+
+		snippetArray[0] = Load("Assets/SamplePayload1.JSON");
+		snippetArray[1] = Load("Assets/SamplePayload2.JSON");
+		snippetArray[2] = Load("Assets/SamplePayload3.JSON");
+
+		string s = snippetArray [snippetCount];
+		snippetCount++;
 		//Debug.Log (metadata);
 		yield return StartCoroutine (handler (s,metadata));
 		//yield return new WaitForSeconds(5);
@@ -60,12 +69,13 @@ public class jsonParse : MonoBehaviour {
 		Debug.Log ("JSON PARSER");
 		var packet = JSON.Parse(new_str);
 		var metapacket = JSON.Parse(meta);
+		timer = 0;
 
 		//JSON PACKET PARSING
 		var packetType = packet["ptype"].Value;
 		text = packet["text"].Value;
 		var type = packet["type"].Value;
-		var time = packet["time"].AsInt;
+		time = packet["time"].AsInt;
 
 		var angry = packet["emotions"]["anger"].AsFloat;
 		var disgust = packet["emotions"]["disgust"].AsFloat;
@@ -105,14 +115,13 @@ public class jsonParse : MonoBehaviour {
 		}
 
 		//debug log code
-		for (int i = 0; i < 20; i++) {
+		/*for (int i = 0; i < 20; i++) {
 			Debug.Log (blendshapes [i]);
 		}
-
+		*/
 		Audio audio = new Audio ();
 		AudioSource source = gameObject.GetComponent<AudioSource> ();
 		yield return StartCoroutine(audio.Play( text, false , source));
-//		yield return StartCoroutine(audio.Play( text, false));
 	}
 
 	GUIStyle text_style = new GUIStyle ();
@@ -133,6 +142,20 @@ public class jsonParse : MonoBehaviour {
 			}
 			if(skinnedMeshRenderer.GetBlendShapeWeight(i) > blendshapes[i]){
 				skinnedMeshRenderer.SetBlendShapeWeight(i, skinnedMeshRenderer.GetBlendShapeWeight(i)-1);
+			}
+		}
+		if (timer < time) {
+			timer = timer + 33;
+			//Debug.Log (timer);
+		} 
+		else {
+			//Debug.Log ("fetching next snippet");
+			//Debug.Log (snippetCount);
+			if(snippetCount<3){
+				timer = 0;
+				string s = snippetArray [snippetCount];
+				snippetCount++;
+				StartCoroutine (handler (s,metadata));
 			}
 		}
 	}

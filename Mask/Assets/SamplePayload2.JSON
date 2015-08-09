@@ -1,0 +1,13 @@
+{
+    "ptype":"snippet",
+    "text":"I hate her",
+    "type":"statement",
+    "time":8000,
+    "emotions":{
+        "anger":0.8 , 
+        "disgust":0.9, 
+        "happy":0.0, 
+        "sad":0.5, 
+        "scared":0.0
+    }
+}

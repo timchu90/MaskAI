@@ -1,0 +1,13 @@
+{
+    "ptype":"snippet",
+    "text":"I feel so low",
+    "type":"statement",
+    "time":4000,
+    "emotions":{
+        "anger":0.4 , 
+        "disgust":0.5, 
+        "happy":0.0, 
+        "sad":0.9, 
+        "scared":0.0
+    }
+}
