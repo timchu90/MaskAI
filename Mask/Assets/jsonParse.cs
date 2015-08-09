@@ -8,20 +8,7 @@ public class jsonParse : MonoBehaviour {
 	int x;
 	SkinnedMeshRenderer skinnedMeshRenderer;
 	string text = "";
-	/*
-	string s = 
-		"{\"ptype\":\"snippet\"," +
-			"\"text\":\"I trusted her\", "   +
-			"\"type\":\"statement\"," +
-			"\"time\":0," +
-			"\"emotions\":{\"anger\":0.5 , \"disgust\":0.6, \"happy\":0.0, \"sad\":0.3, \"scared\":0.0}}";
-	string s1 = 
-		"{\"ptype\":\"snippet\"," +
-			"\"text\":\"I reeeally reeeally trusted her\", "   +
-			"\"type\":\"statement\"," +
-			"\"time\":0," +
-			"\"emotions\":{\"anger\":0.5 , \"disgust\":0.6, \"happy\":0.0, \"sad\":0.3, \"scared\":0.0}}";
-	*/
+	float[] blendshapes = new float[20]; //array holds goal values for all 
 	private string Load(string fileName)
 	{
 		// Handle any problems that might arise when reading the text
@@ -91,7 +78,6 @@ public class jsonParse : MonoBehaviour {
 		emotions [2] = angry;
 		emotions [3] = scared;
 		emotions [4] = disgust;
-		float[] blendshapes = new float[20];
 
 		Debug.Log ("text:" + text + 
 		           " time:" + time + 
@@ -103,6 +89,7 @@ public class jsonParse : MonoBehaviour {
 
 		//JSON METADATA PARSING
 		//get all weight values of every key and average the non-zero values
+
 		for (int j = 8; j < 28; j++) {
 			blendshapes[j-8] = 0; //metadata file starts at 8 to skip initial name,id,age etc. metadata
 			var count = 0;
@@ -140,8 +127,13 @@ public class jsonParse : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		x = x + 1;
-		skinnedMeshRenderer.SetBlendShapeWeight(1, x);
-		skinnedMeshRenderer.SetBlendShapeWeight(2, x);
+		for (int i = 0; i < 20; i++) {
+			if(skinnedMeshRenderer.GetBlendShapeWeight(i) < blendshapes[i]){
+				skinnedMeshRenderer.SetBlendShapeWeight(i, skinnedMeshRenderer.GetBlendShapeWeight(i)+1);
+			}
+			if(skinnedMeshRenderer.GetBlendShapeWeight(i) > blendshapes[i]){
+				skinnedMeshRenderer.SetBlendShapeWeight(i, skinnedMeshRenderer.GetBlendShapeWeight(i)-1);
+			}
+		}
 	}
 }
