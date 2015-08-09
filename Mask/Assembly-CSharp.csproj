@@ -47,8 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Audio.cs" />
-     <Compile Include="Assets\MaskScript.cs" />
-     <Compile Include="Assets\anim (1).cs" />
      <Compile Include="Assets\jsonParse.cs" />
      <None Include="Assets\MetaValues.txt" />
  <Reference Include="UnityEngine.UI">

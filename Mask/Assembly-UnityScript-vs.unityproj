@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\helloworld.js" />
      <Compile Include="Assets\sampleJSON.js" />
      <None Include="Assets\MetaValues.txt" />
  <Reference Include="UnityEngine.UI">
