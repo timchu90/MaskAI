@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\jsonParse.cs">
     <Files>
-      <File FileName="Assets\jsonParse.cs" Line="1" Column="1" />
-      <File FileName="Assets\Audio.cs" Line="1" Column="1" />
+      <File FileName="Assets\jsonParse.cs" Line="66" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

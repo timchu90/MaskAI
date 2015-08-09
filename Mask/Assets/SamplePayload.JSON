@@ -1,0 +1,13 @@
+{
+    "ptype":"snippet",
+    "text":"I trusted her",
+    "type":"statement",
+    "time":1200,
+    "emotions":{
+        "anger":0.5 , 
+        "disgust":0.6, 
+        "happy":0.0, 
+        "sad":0.3, 
+        "scared":0.0
+    }
+}
