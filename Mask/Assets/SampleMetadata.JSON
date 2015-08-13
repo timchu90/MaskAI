@@ -1,0 +1,306 @@
+{
+     "profiles":[
+         {
+             "id": "p1",
+             "firstName": "Bob",
+             "lastName": "Smith",
+             "age": 25,
+             "gender": "M",
+             "Nationality":"American",
+             "Ethnicity":"Mexican",
+             "Language":"English",
+             "R_Top_Eyelid":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 17,
+                "scared": 0,
+                "disgust": 20
+             },
+             "L_Top_Eyelid":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 10,
+                "scared": 0,
+                "disgust": 15
+             },
+             "R_R_Eyebrow":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 60,
+                "scared": 0,
+                "disgust": 50
+             },
+             "R_L_Eyebrow":{
+                "happy": 50,
+                "sad": 100,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 40
+             },
+             "L_R_Eyebrow":{
+                "happy": 50,
+                "sad": 100,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 0
+             },
+             "L_L_Eyebrow":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 60,
+                "scared": 0,
+                "disgust": 0
+             },
+             "Furrow":{
+                "happy": 0,
+                "sad": 50,
+                "angry": 100,
+                "scared": 0,
+                "disgust": 100
+             },
+             "R_Bot_Eyelid":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "L_Bot_Eyelid":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "R_Cheek":{
+                "happy": 80,
+                "sad": 50,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 50
+             },
+             "L_Cheek":{
+                "happy": 80,
+                "sad": 50,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 0
+             },
+             "R_Nostril":{
+                "happy": 80,
+                "sad": 30,
+                "angry": 50,
+                "scared": 100,
+                "disgust": 50
+             },
+             "L_Nostril":{
+                "happy": 80,
+                "sad": 30,
+                "angry": 50,
+                "scared": 100,
+                "disgust": 50
+             },
+             "Top_Lip":{
+                "happy": 50,
+                "sad": 0,
+                "angry": 40,
+                "scared": 100,
+                "disgust": 50
+             },
+             "Bot_Lip":{
+                "happy": 50,
+                "sad": 0,
+                "angry": 0,
+                "scared": 50,
+                "disgust": 40
+             },
+             "R_Mouth_Up":{
+                "happy": 99,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "L_Mouth_Up":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "Jaw":{
+                "happy": 30,
+                "sad": 30,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 50
+             },
+             "R_Mouth_Down":{
+                "happy": 0,
+                "sad": 100,
+                "angry": 100,
+                "scared": 100,
+                "disgust": 80
+             },
+             "L_Mouth_Down":{
+                "happy": 0,
+                "sad": 100,
+                "angry": 100,
+                "scared": 100,
+                "disgust": 100
+             }
+         },
+
+
+         {
+             "id": "p2",
+             "firstName": "Alice",
+             "lastName": "Smith",
+             "age": 22,
+             "gender": "F",
+             "Nationality":"American",
+             "Ethnicity":"American",
+             "Language":"English",
+             "R_Top_Eyelid":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 17,
+                "scared": 0,
+                "disgust": 20
+             },
+             "L_Top_Eyelid":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 10,
+                "scared": 0,
+                "disgust": 15
+             },
+             "R_R_Eyebrow":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 60,
+                "scared": 0,
+                "disgust": 50
+             },
+             "R_L_Eyebrow":{
+                "happy": 50,
+                "sad": 100,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 40
+             },
+             "L_R_Eyebrow":{
+                "happy": 50,
+                "sad": 100,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 0
+             },
+             "L_L_Eyebrow":{
+                "happy": 0,
+                "sad": 0,
+                "angry": 60,
+                "scared": 0,
+                "disgust": 0
+             },
+             "Furrow":{
+                "happy": 0,
+                "sad": 50,
+                "angry": 100,
+                "scared": 0,
+                "disgust": 100
+             },
+             "R_Bot_Eyelid":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "L_Bot_Eyelid":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "R_Cheek":{
+                "happy": 80,
+                "sad": 50,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 50
+             },
+             "L_Cheek":{
+                "happy": 80,
+                "sad": 50,
+                "angry": 0,
+                "scared": 100,
+                "disgust": 0
+             },
+             "R_Nostril":{
+                "happy": 80,
+                "sad": 30,
+                "angry": 50,
+                "scared": 100,
+                "disgust": 50
+             },
+             "L_Nostril":{
+                "happy": 80,
+                "sad": 30,
+                "angry": 50,
+                "scared": 100,
+                "disgust": 50
+             },
+             "Top_Lip":{
+                "happy": 50,
+                "sad": 0,
+                "angry": 40,
+                "scared": 100,
+                "disgust": 50
+             },
+             "Bot_Lip":{
+                "happy": 50,
+                "sad": 0,
+                "angry": 0,
+                "scared": 50,
+                "disgust": 40
+             },
+             "R_Mouth_Up":{
+                "happy": 99,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "L_Mouth_Up":{
+                "happy": 100,
+                "sad": 0,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 0
+             },
+             "Jaw":{
+                "happy": 30,
+                "sad": 30,
+                "angry": 0,
+                "scared": 0,
+                "disgust": 50
+             },
+             "R_Mouth_Down":{
+                "happy": 0,
+                "sad": 100,
+                "angry": 100,
+                "scared": 100,
+                "disgust": 80
+             },
+             "L_Mouth_Down":{
+                "happy": 0,
+                "sad": 100,
+                "angry": 100,
+                "scared": 100,
+                "disgust": 100
+             }
+         }
+     ]
+ }

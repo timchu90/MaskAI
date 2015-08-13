@@ -11,7 +11,7 @@ public class Audio : MonoBehaviour {
 	public string final_word = "I ";
 	public string word1 = "really really";
 	public string word2 = "hate you";
-	public float vol = 0.3f;
+	public float vol = 0.7f;
 	public bool word_bold = false;
 	public bool word1_bold = true;
 	public bool word2_bold = false;
@@ -55,8 +55,8 @@ public class Audio : MonoBehaviour {
 		source.volume = vol;
 		
 		if (bold) {
-			source.pitch = 0.5f;
-			source.volume = vol + 0.7f;
+			source.pitch = 0.95f;
+			source.volume = vol + 0.3f;
 		} else {
 			source.pitch = 1f;
 			source.volume = vol;
